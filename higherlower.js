@@ -27,14 +27,14 @@ function setupGame() {
             guess('lower');
         });
 
-        container.style.display = 'flex'; // Adjust display for layout
+        container.style.display = 'flex'; 
     } else {
         console.error("Game container not found.");
     }
 }
 
 function generateRandomNumber() {
-    return Math.floor(Math.random() * 100) + 1;  // Random number between 1 and 100
+    return Math.floor(Math.random() * 100) + 1;  
 }
 
 document.addEventListener('DOMContentLoaded', setupGame);
@@ -45,10 +45,10 @@ window.guess = function(direction) {
     const message = document.getElementById('game-message');
     if ((direction === 'higher' && isHigher) || (direction === 'lower' && !isHigher)) {
         message.textContent = `Correct! ${nextNumber} is ${direction} than ${currentNumber}.`;
-        message.className = 'message correct'; // Add correct class for styling
+        message.className = 'message correct'; 
     } else {
         message.textContent = `Wrong! ${nextNumber} is ${isHigher ? 'higher' : 'lower'} than ${currentNumber}.`;
-        message.className = 'message wrong'; // Add wrong class for styling
+        message.className = 'message wrong'; 
     }
     document.getElementById('current-number').textContent = nextNumber;
     document.querySelector('.card').innerHTML = `<p>Current Number: <span class="number">${nextNumber}</span></p>`;
