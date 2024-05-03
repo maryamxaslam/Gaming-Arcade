@@ -8,6 +8,7 @@
     <title>Gaming Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="sudoku.css" id="gameStyle">
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head> 
@@ -30,7 +31,7 @@
             <img src="file (1).png" alt="Sudoku" id="sudoku">
             <aside class="game-list">
                 <ul>
-                    <li><a href="javascript:void(0);" data-game="sudoku">Sudoku</a></li>
+                    <li><a href="javascript:void(0);" data-game="sudoku.js">Sudoku</a></li>
                 </ul>
             </aside>
         </div>
@@ -38,11 +39,11 @@
             <img src="tictactoe-removebg-preview.png" alt="Tic Tac Toe">
             <aside class="game-list">
                 <ul>
-                    <li><a href="javascript:void(0);" data-game="tictactoe">Open Source Game</a></li>
+                    <li><a href="javascript:void(0);" data-game="tictactoe.js">Open Source Game</a></li>
                 </ul>
             </aside>
         </div>
-        <div class="game-pair">
+        <div class="game-pair">  
             <img src="file (2).png" alt="Card Game">
             <aside class="game-list">
                 <ul>
@@ -50,8 +51,8 @@
                 </ul>
             </aside>
         </div>
+        <div id="game-container" style="display:none;"></div>
 </section>
-<img id="current-card" src="" alt="Current Card">
 <footer id="footer">
     <h5>Works Cited:</h5>
     <ul>
@@ -65,12 +66,8 @@
     </ul>
     <img src="footer.jpg" alt="footer iamge" style="width: 100px; height: auto;">
 </footer>
-</footer>
 
 <script src="script.js" defer></script>
-<script src="sudoku.js" defer></script>
-<script src="tictactoe.js" defer></script>
-<script src="higherlower.js" defer></script>
 </body>
 </html>
 
