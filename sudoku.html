@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script type ="text/javascript" src="sudoku.js"></script>
+        <link href="sudoku-style.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <a href="gamingwebsite.html" ID="back-button"><img src="back-button-icon.png" alt="back button"></a>
+        <section ID="game">
+            <div ID="board">
+                <div class="board-section" ID="sec-1">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-2">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-3">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-4">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-5">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-6">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-7">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-8">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+                <div class="board-section" ID="sec-9">
+                    <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                </div>
+            </div>
+            <div ID="number-selector">
+                <input type="button" onclick="changeSelected(1)" value="1"></input>
+                <input type="button" onclick="changeSelected(2)" value="2"></input>
+                <input type="button" onclick="changeSelected(3)" value="3"></input>
+                <input type="button" onclick="changeSelected(4)" value="4"></input>
+                <input type="button" onclick="changeSelected(5)" value="5"></input>
+                <input type="button" onclick="changeSelected(6)" value="6"></input>
+                <input type="button" onclick="changeSelected(7)" value="7"></input>
+                <input type="button" onclick="changeSelected(8)" value="8"></input>
+                <input type="button" onclick="changeSelected(9)" value="9"></input>
+                <input type="image"  onclick="changeSelected(0)" src="eraser-icon.png"></input>
+            </div>
+        </section>
+
+        <div id="info-section">
+            <h1 class="title">Change Difficulty</h1>
+            <div class="radio-buttons">
+                <input type="radio" id="easy" name="difficulty" value="easy" checked></input>
+                <label for="easy">Easy</label>
+                <input type="radio" id="medium" name="difficulty" value="medium"></input>
+                <label for="medium">Medium</label>
+                <input type="radio" id="hard" name="difficulty" value="hard"></input>
+                <label for="hard">Hard</label>
+            </div>
+
+            <input type="button" id="generate-button" onclick="generateBoard()" value="Generate New Board"></input>
+
+            <p id="game-over-text"></p>
+        </div>
+    </body>
+</html>
