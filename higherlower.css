@@ -3,38 +3,49 @@
     margin: 0 auto;
     text-align: center;
     font-family: 'Arial', sans-serif;
-}
-
-
-.header {
+    color: #ccc;
+  }
+  
+  
+  .header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-}
-
-.game-container {
+  }
+  
+  .game-container {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.card {
+  }
+  
+  .card {
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
     background-color: #f3f3f3;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-}
-
-.card .number {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+  }
+  
+  .card .number {
     font-size: 3rem;
     color: #333;
-}
-
-.buttons .game-btn {
+  }
+  
+  .buttons .game-btn {
     padding: 10px 20px;
     margin: 10px;
     font-size: 1.2rem;
@@ -44,20 +55,20 @@
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.buttons .game-btn:hover {
+  }
+  
+  .buttons .game-btn:hover {
     background-color: #45a049;
-}
-
-.message {
+  }
+  
+  .message {
     margin-top: 20px;
-}
-
-.correct {
+  }
+  
+  .correct {
     color: green;
-}
-
-.wrong {
+  }
+  
+  .wrong {
     color: red;
-}
+  }
